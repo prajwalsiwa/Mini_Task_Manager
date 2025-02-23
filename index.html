@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/payment.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/tasksManager.css">
+    
 
 </head>
 <body>
@@ -84,6 +88,80 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <h1>Task Manager</h1>
+    <p>Your daily to-do list</p>
+    <div class="task-card" id="taskCard">
+        <div class="task-item">
+            <input type="checkbox" id="task1">
+            <label for="task1">Task item one</label>
+        </div>
+        <div class="task-item">
+            <input type="checkbox" id="task2" checked>
+            <label for="task2">Task Item Two</label>
+            <button class="delete-btn" onclick="deleteTask(2)">X Delete</button>
+        </div>
+        <input type="text" class="new-task-input" id="newTaskInput" placeholder="Add new task">
+        <button class="add-task-btn" onclick="addTask()">Add Task</button>
+    </div>
+    
+</div>
+<!-- contact section  -->
+<div class="contact_section">
+    <h2>Contact us</h2>
+    <p>Speak with our team to see how we can help your business.</p>
+    <form class="contact_form">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Your best contact number" required>
+        <textarea placeholder="Business or company name" required></textarea>
+        <button type="submit" class="submit_btn">Submit</button>
+    </form>
+</div>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer_content">
+        <p>Curabitur consequat, purus a scelerisque sagittis, nulla metus tincidunt elit, vel venenatis nulla libero nec nulla. Suspendisse potenti. Aenean a justo vel sapien pellentesque tincidunt. Sed luctus, elit ac interdum convallis, ligula libero egestas orci, at auctor felis ligula nec odio.</p>
+        <div class="social_icons">
+            <a href="#"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="assets/images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <div class="footer_sub">
+
+        <div class="footer_links">
+            <div class="footer_column">
+                <h4>Products</h4>
+                <a href="#">Payments</a>
+                <a href="#">Invoice Factoring</a>
+                <a href="#">Invoice finance</a>
+                <a href="#">Supplier finance</a>
+                <a href="#">Supplier finance</a>
+                <a href="#">Customer finance</a>
+            </div>
+            <div class="footer_column">
+                <h4>Company</h4>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+            </div>
+            <div class="footer_column">
+                <h4>Resources</h4>
+                <a href="#">Frequently asked questions</a>
+                <a href="#">Knowledge base</a>
+                <a href="#">API documentation</a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <a href="#">Privacy policy</a>
+            <a href="#">Contact us</a>
+            <a href="#">Site map</a>
+            <span>@ebpearls</span>
+        </div>
+    </div>
+</footer>
+
     <script src="script.js"></script> 
 </body>
 
